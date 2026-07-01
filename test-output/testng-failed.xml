@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SauceDemoAutomationSuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.utils.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="EndToEndPurchaseTest(failed)">
+    <parameter name="password" value="secret_sauce"/>
+    <parameter name="username" value="standard_user"/>
+    <classes>
+      <class name="com.test.SauceTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="purchaseTest"/>
+          <include name="setup"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- com.test.SauceTest -->
+    </classes>
+  </test> <!-- EndToEndPurchaseTest(failed) -->
+</suite> <!-- Failed suite [SauceDemoAutomationSuite] -->

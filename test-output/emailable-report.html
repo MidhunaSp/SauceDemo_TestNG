@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">SauceDemoAutomationSuite</th></tr>
+<tr><td><a href="#t0">EndToEndPurchaseTest</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">0</td><td class="num">2,763</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">SauceDemoAutomationSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">EndToEndPurchaseTest &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.test.SauceTest</td><td><a href="#m0">setup</a></td><td rowspan="1">1777813524930</td><td rowspan="1">2597</td></tr><tr><th colspan="4">EndToEndPurchaseTest &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.test.SauceTest</td><td><a href="#m1">tearDown</a></td><td rowspan="1">1777813527625</td><td rowspan="1">0</td></tr><tr><th colspan="4">EndToEndPurchaseTest &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">com.test.SauceTest</td><td><a href="#m2">loginTest</a></td><td rowspan="1">1777813527568</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m3">purchaseTest</a></td><td rowspan="1">1777813527613</td><td rowspan="1">0</td></tr></tbody>
+</table>
+<h2>EndToEndPurchaseTest</h2><h3 id="m0">com.test.SauceTest#setup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: googlechromelabs.github.io
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1443)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1459)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1437)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+	at com.utils.DriverUtils.createDriver(DriverUtils.java:20)
+	at com.test.SauceTest.setup(SauceTest.java:12)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: java.net.UnknownHostException: googlechromelabs.github.io
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:998)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1807)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1676)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:61)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:169)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:151)
+	at io.github.bonigarcia.wdm.online.Parser.parseJson(Parser.java:54)
+	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.getDriverUrls(ChromeDriverManager.java:127)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1464)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1294)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1200)
+	... 30 more
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.test.SauceTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.test.SauceTest#loginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>standard_user</td><td>secret_sauce</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: googlechromelabs.github.io
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1443)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+	at io.github.bonigarcia.wdm.WebDriverManager.fallback(WebDriverManager.java:1459)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:1437)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1206)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:429)
+	at com.utils.DriverUtils.createDriver(DriverUtils.java:20)
+	at com.test.SauceTest.setup(SauceTest.java:12)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: java.net.UnknownHostException: googlechromelabs.github.io
+	at java.base/java.net.InetAddress$CachedLookup.get(InetAddress.java:998)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1807)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1676)
+	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:61)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:169)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:490)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:192)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:150)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:113)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:183)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:87)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.hc.client5.http.classic.HttpClient.executeOpen(HttpClient.java:183)
+	at io.github.bonigarcia.wdm.online.HttpClient.execute(HttpClient.java:151)
+	at io.github.bonigarcia.wdm.online.Parser.parseJson(Parser.java:54)
+	at io.github.bonigarcia.wdm.managers.ChromeDriverManager.getDriverUrls(ChromeDriverManager.java:127)
+	at io.github.bonigarcia.wdm.WebDriverManager.createUrlHandler(WebDriverManager.java:1464)
+	at io.github.bonigarcia.wdm.WebDriverManager.download(WebDriverManager.java:1294)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:1200)
+	... 30 more
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.test.SauceTest#purchaseTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method com.test.SauceTest.purchaseTest() on instance com.test.SauceTest@f79e depends on not successfully finished methods 
+[com.test.SauceTest.loginTest() on instance com.test.SauceTest@f79e]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
