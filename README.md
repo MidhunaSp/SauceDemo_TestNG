@@ -49,4 +49,4 @@ test-output/
 
 ## 👩‍💻 Author
 
-Midhuna Varshini
+Midhuna Varshini S P
